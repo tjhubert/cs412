@@ -1,0 +1,70 @@
+https://wiki.cites.illinois.edu/wiki/download/attachments/578625131/CS412%20HW1%20SP16.pdf?version=3&modificationDate=1454096996000&api=v2
+
+Question 1 (15 points)
+Given a dataset, data.online.scores (in data.zip), which includes the records of students
+exam scores (sample from the population) for the past few years of an online course. The
+first column is the students id, the second column is the mid-term scores, and the third
+column is the final scores, and data are splitted by tab. Based on the dataset, give out
+the following statistical description of data. If the result is not integer, then round it to 3
+decimal places.
+Give out the basic statistical description about mid-term scores. You should write scripts to
+calculate statistical descriptions. There is no restrictions on the language you use.
+a. (3’) Max, min
+b. (3’) First quantile Q1, the median, and the third quantile Q3.
+1
+2
+c. (3’) The sample mean score.
+d. (3’) The mode score.
+e. (3’) The sample variance.
+
+
+
+Question 2 (15 points)
+Given the inventories of two supermarkets King Kullen (KK) and J Sainsbury (JS), compare
+the similarity between this two supermarkets by using the different proximity measures. if
+the result is not integer, then round it to 3 decimal places.
+a. (3’) Given 200 items, the following table 1 summarizes how many items are supplied
+by corresponding supermarket in Table 1. In Table 1, for KK = 0 (King Kullen has
+no such items), JS = 0, it corresponds to the number of items among the 200 items
+that are served neither by KK nor JS. For KK = 1, JS = 0, it corresponds the number
+of items among the 200 items that are served by KK but not JS. So on and so forth.
+Based on this table, calculate the Jaccard coefficient of similarity between J Sainsbury
+and King Kullen.
+JS
+KK
+1 0
+1 41 58
+0 22 79
+Table 1: Contingency Table for KK and JS
+b. (9’) Based on all items (treat the counts of the 100 items as a feature vector of the
+two supermarkets), (file data.supermarkets.inventories, contained in the file data.zip),
+calculate the minkowski distance of the two vectors with regard to different h values:
+1. h=1 (Manhattan distance)
+2. h=2 (Euclidean distance)
+3. h=∞ (Supremum distance)
+c. (3’) The Cosine similarity between J Sainsbury and King Kullen with regard to the
+feature vector. (file data.supermarkets.inventories, contained in the file data.zip).
+Question 3 (10 points)
+Based on the data of students’ scores (file data.online.scores, contained in the file data.zip),
+normalize the mid-term score using z-score normalization (divided by the empirical standard
+deviation). Please write a script to normalize the data using z-score normalization, in any
+language of your choice. You need to include the script file in your submission.
+3
+a. (5) Compare the sample mean and variance before and after normalization.
+b. (5) Given original score of 90, what is the corresponding score after normalization?
+
+
+
+Question 4 (30 points)
+In order to better understand the intuition and usage of Pearson correlation coefficients and
+Principal Component Analysis (PCA), in the data folder, you are given the Iris dataset
+(iris.data, contained in the data.zip) and description (iris.names, contained in the data.zip).
+There are 150 data items in this dataset. Run PCA to project the data down to a two
+dimensional subspace spanned by the first two principal components. Matlab can be helpful
+for this question.
+a. (10) produce a scatter plot of the data after projection. Make sure you plot each of the
+three classes differently (using color or different markers), and add legend. Report the
+scatter plot. (Hint: you may want to play with the data via different pre-processing
+methods.)
+b. (20) Compare the results under different choices of two dimensional spaces.
+Note: You DO NOT need to implement PCA. Using existing packages is allowed.
